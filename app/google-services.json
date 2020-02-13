@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860330833038",
+    "firebase_url": "https://intern-49ac5.firebaseio.com",
+    "project_id": "intern-49ac5",
+    "storage_bucket": "intern-49ac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860330833038:android:1a21acb2a3b4a9283905df",
+        "android_client_info": {
+          "package_name": "kr.hs.emrim.tjdusdlfkrhd.internship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860330833038-um761l5v00q7c205np6c7mdu40pggfut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv5oBD-PYD1wi-b3jhkxYwMkZpbFXDwj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860330833038-um761l5v00q7c205np6c7mdu40pggfut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
