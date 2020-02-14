@@ -1,12 +1,16 @@
 package kr.hs.emrim.tjdusdlfkrhd.internship;
 
+
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class GuideActivity extends AppCompatActivity {
 
@@ -29,7 +33,10 @@ public class GuideActivity extends AppCompatActivity {
             public void onClick(View view) {
                 cnt++;
                 if(cnt> 2) {
+
                     cnt = 3;
+
+
                 }
                 show();
             }
@@ -58,9 +65,11 @@ public class GuideActivity extends AppCompatActivity {
         else if(cnt==2) {
             guideimg1.setImageResource(R.drawable.guide3);
         }
+
         if (cnt == 3) {
             Intent intent = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent);//액티비티 띄우기
         }
     }
 }
+
