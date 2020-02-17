@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
@@ -8,50 +10,148 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="146dp"
-        android:layout_height="169dp"
+        android:layout_width="145dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/StringValue"
         app:srcCompat="@drawable/ic_signin_logo" />
 
     <ImageView
         android:id="@+id/logotype"
-        android:layout_width="249dp"
-        android:layout_height="84dp"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-56dp"
+        android:layout_marginTop="-55dp"
+        android:contentDescription="@string/StringValue"
         app:srcCompat="@drawable/ic_signin_logotype" />
+
+    <ImageView
+        android:id="@+id/emailBox"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/logotype"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_signin_emailbox" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_below="@id/logotype"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp"
-        android:background="@drawable/ic_signin_emailbox"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/emailBox"
+        android:layout_alignTop="@+id/emailBox"
+        android:layout_alignEnd="@+id/emailBox"
+        android:layout_alignBottom="@+id/emailBox"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
         android:hint="이메일" />
+
+    <ImageView
+        android:id="@+id/passwordBox"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/emailBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_signin_emailbox" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_below="@id/email"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-29dp"
-        android:background="@drawable/ic_signin_emailbox"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/passwordBox"
+        android:layout_alignTop="@+id/passwordBox"
+        android:layout_alignEnd="@+id/passwordBox"
+        android:layout_alignBottom="@+id/passwordBox"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:ems="15"
+        android:inputType="textPassword"
         android:hint="비밀번호" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_below="@+id/password"
-        android:layout_marginTop="-20dp"
+        android:id="@+id/loginBtn"
+        android:layout_width="354dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/passwordBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="33dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/ic_signin_signinbtn" />
 
+    <TextView
+        android:id="@+id/findId"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="161dp"
+        android:text="아이디 찾기" />
 
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toEndOf="@+id/findId"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_signin_line" />
+
+    <TextView
+        android:id="@+id/findPwd"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/line1"
+        android:text="비밀번호 찾기" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="32dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toEndOf="@+id/findPwd"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_signin_line" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@+id/line2"
+        android:text="회원가입" />
 </RelativeLayout>
