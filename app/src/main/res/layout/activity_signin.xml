@@ -34,21 +34,27 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="40dp"
         android:ems="15"
-        android:fontFamily="@font/notosanscjkkr_medium"
+
         android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="#b9b9b9" />
+        android:fontFamily="@font/notosanscjkkr_medium"
         android:inputType="textPassword"
         android:textColor="#b9b9b9"
         android:textSize="18sp" />
 
-    <!--<ImageButton-->
-        <!--android:id="@+id/loginBtn"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="96dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:layout_marginRight="24dp"-->
-        <!--android:background="@android:color/transparent"-->
-        <!--android:scaleType="centerInside"-->
-        <!--app:srcCompat="@drawable/ic_signin_signinbtn" />-->
+
+    <TextView
+        android:id="@+id/findId"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="161dp"
+        android:text="아이디 찾기"
+        android:textColor="#676767" />
 
     <Button
         android:id="@+id/signinBtn"
@@ -64,12 +70,15 @@
         android:textColor="#ffffff"
         android:textSize="18sp" />
 
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
+
+
 
         <Button
             android:id="@+id/findId"
@@ -119,6 +128,4 @@
             android:textSize="14sp" />
 
     </LinearLayout>
-
-
 </LinearLayout>
