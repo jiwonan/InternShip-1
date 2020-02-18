@@ -54,7 +54,8 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="15dp"
         android:background="@null"
-        android:hint="이메일" />
+        android:hint="이메일"
+        android:textColor="#b9b9b9" />
 
     <ImageView
         android:id="@+id/passwordBox"
@@ -83,8 +84,9 @@
         android:layout_marginBottom="15dp"
         android:background="@null"
         android:ems="15"
+        android:hint="비밀번호"
         android:inputType="textPassword"
-        android:hint="비밀번호" />
+        android:textColor="#b9b9b9" />
 
     <ImageButton
         android:id="@+id/loginBtn"
@@ -109,7 +111,8 @@
         android:layout_marginStart="62dp"
         android:layout_marginTop="11dp"
         android:layout_marginBottom="161dp"
-        android:text="아이디 찾기" />
+        android:text="아이디 찾기"
+        android:textColor="#676767" />
 
     <ImageView
         android:id="@+id/line1"
@@ -130,7 +133,8 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="9dp"
         android:layout_toEndOf="@+id/line1"
-        android:text="비밀번호 찾기" />
+        android:text="비밀번호 찾기"
+        android:textColor="#676767" />
 
     <ImageView
         android:id="@+id/line2"
@@ -153,5 +157,6 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="32dp"
         android:layout_toEndOf="@+id/line2"
-        android:text="회원가입" />
+        android:text="회원가입"
+        android:textColor="#676767" />
 </RelativeLayout>
