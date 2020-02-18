@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="670dp"
+    android:height="800dp"
+    android:viewportWidth="670"
+    android:viewportHeight="800">
+
+    <path
+        android:fillColor="#fff"
+        android:strokeColor="#b7b7b7"
+        android:strokeWidth="1"
+        android:strokeMiterLimit="10"
+        android:pathData="M 116.29 19.08 L 575.99 19.08 Q 654.5 19.08 654.5 97.59 L 654.5 683.57 Q 654.5 762.08 575.99 762.08 L 116.29 762.08 Q 37.78 762.08 37.78 683.57 L 37.78 97.59 Q 37.78 19.08 116.29 19.08 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M253.36,611.2c-8.93,1.68-17.13,1.9-30.59,1.9h-5.63V577.33h31.61V585h-22v6.36h20.64v7.47H226.72v6.65c10.83-0.07,17.86-0.36,25.61-1.75Zm-19.47,19.54h36.22v7.68H224.24V617.57h9.65Zm42.73-38.56v7.9H267.7v22.1H258v-50h9.66v20Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M306.7,590.35c0,10.24,5.34,22.17,16.39,27.29l-5.34,7.61C310.28,621.81,305,615.08,302,607.1c-3,8.78-8.41,16.17-16.09,19.83l-5.42-7.68c11.05-5.12,16.54-17.78,16.54-28.9v-3.73h-14v-8h37v8H306.7Zm37.82,15.51h-9.8v33.73h-9.66V572.2h9.66v25.68h9.8Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M362.38,614.71a165.38,165.38,0,0,0,28.32-2.92l1,8A159.45,159.45,0,0,1,358.8,623h-6V578.57h9.58Zm43.17-42.58v67.39h-9.66V572.13Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M452.38,600.88c0,14.86-7.54,24.15-17.71,24.15S417,615.74,417,600.88s7.46-24,17.7-24S452.38,586.11,452.38,600.88Zm-9.29,0c0-10-3.44-15.29-8.42-15.29s-8.41,5.34-8.41,15.29,3.36,15.37,8.41,15.37S443.09,610.91,443.09,600.88Zm36.07,4.69h-9.81v34H459.7V572.2h9.65v25.39h9.81Z" />
+    <group>
+    </group>
+    <path
+        android:strokeColor="#ffcc1a"
+        android:strokeWidth="3"
+        android:strokeMiterLimit="10"
+        android:pathData="M 341.96 101.32 C 443.353957221 101.32 525.55 183.516042779 525.55 284.91 C 525.55 386.303957221 443.353957221 468.5 341.96 468.5 C 240.566042779 468.5 158.37 386.303957221 158.37 284.91 C 158.37 183.516042779 240.566042779 101.32 341.96 101.32 Z" />
+</vector>
