@@ -67,7 +67,7 @@ public class GuideActivity extends AppCompatActivity {
         }
 
         if (cnt == 3) {
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);//액티비티 띄우기
         }
     }
