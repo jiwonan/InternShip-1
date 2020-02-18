@@ -39,17 +39,6 @@
         android:inputType="textPassword"
         android:textColor="#b9b9b9"
         android:textSize="18sp" />
-
-    <!--<ImageButton-->
-        <!--android:id="@+id/loginBtn"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="96dp"-->
-        <!--android:layout_marginLeft="24dp"-->
-        <!--android:layout_marginRight="24dp"-->
-        <!--android:background="@android:color/transparent"-->
-        <!--android:scaleType="centerInside"-->
-        <!--app:srcCompat="@drawable/ic_signin_signinbtn" />-->
-
     <Button
         android:id="@+id/signinBtn"
         android:layout_width="332dp"
