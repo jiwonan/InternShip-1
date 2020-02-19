@@ -1,5 +1,7 @@
 package kr.hs.emrim.tjdusdlfkrhd.internship;
 
+import java.util.List;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -33,5 +35,5 @@ public interface RedayService {
     Call<User> getUser(@Path("email") String email);
 
     @GET("/articles")
-    Iterable<Article> readArticlesDataAll();
+    Call<List<Article>> readArticlesDataAll();
 }

@@ -22,16 +22,18 @@
             android:name=".SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
