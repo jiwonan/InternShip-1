@@ -47,7 +47,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/Seoul"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -105,6 +107,7 @@
                 app:cardCornerRadius="25dp">
 
                 <LinearLayout
+                    android:id="@+id/Osaka"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">

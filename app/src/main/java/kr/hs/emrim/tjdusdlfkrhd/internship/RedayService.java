@@ -11,7 +11,7 @@ import retrofit2.http.Query;
 
 public interface RedayService {
 
-    String URL = "http://192.168.9.162";
+    String URL = "http://192.168.9.162:1234";
 
     @POST("users") // requestparam == Query
     Call<User> createUser(@Query("username") String username, @Query("usernickname") String usernickname, @Query("password") String password, @Query("email") String email);
@@ -21,13 +21,16 @@ public interface RedayService {
 
     @Multipart
     @POST("{username}/articles")
-    Call<String> createArticle(@Path("username") String username, @Query("contents") String contents, @Part MultipartBody.Part file);
+    Call<String> createArticle(@Path("username") String username, @Query("title") String title, @Query("contents") String contents, @Part MultipartBody.Part file);
 
+    /*
+    // 유저 이름 가져오기.
     @GET("{email}/getusername")
     Call<String> getUsername(@Path("email") String email);
+    */
 
-//    @POST("{username}/articles")
-//    Call<String> test(@Path("username") String username);
+    @GET("/users/{email}")
+    Call<User> getUser(@Path("email") String email);
 
     @GET("/articles")
     Iterable<Article> readArticlesDataAll();

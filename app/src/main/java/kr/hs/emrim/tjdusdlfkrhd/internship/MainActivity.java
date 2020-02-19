@@ -4,18 +4,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import android.util.Patterns;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresPermission;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), WriteActivity.class));
+            }
+        });
+
+        Button LogoutBtn = findViewById(R.id.LogoutBtn);
+        LogoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editor.putString("email", null);
+                editor.putString("password", null);
+                editor.putString("username", null);
+                editor.commit();
+                Toast.makeText(MainActivity.this, "로그아웃 완료", Toast.LENGTH_SHORT).show();
+                Log.d("mytag", LoginUserInfo.getString("email",null)+","+LoginUserInfo.getString("password",null)+","+
+                        LoginUserInfo.getString("username",null));
             }
         });
     }
