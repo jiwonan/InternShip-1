@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     android:orientation="vertical"
     tools:context=".HomeActivity"
     tools:layout_editor_absoluteX="-236dp"
@@ -49,7 +50,7 @@
             android:orientation="vertical" >
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Seoul"
+                android:id="@+id/seoul"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -95,7 +96,9 @@
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/osaka"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -107,7 +110,6 @@
                 app:cardCornerRadius="25dp">
 
                 <LinearLayout
-                    android:id="@+id/Osaka"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -144,7 +146,9 @@
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/newyork"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -185,12 +189,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="뉴욕"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/lasvegas"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -223,7 +229,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="미국" />
 
                     <TextView
                         android:id="@+id/card4_city"
@@ -233,12 +239,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="라스베가스"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/bangkok"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -269,7 +277,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="미국" />
+                        android:text="태국" />
 
                     <TextView
                         android:id="@+id/card5_city"
@@ -279,12 +287,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="방콕"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/london"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -317,7 +327,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="영국" />
 
                     <TextView
                         android:id="@+id/card6_city"
@@ -327,12 +337,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="런던"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/machupicchu"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -363,7 +375,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="미국" />
+                        android:text="페루" />
 
                     <TextView
                         android:id="@+id/card7_city"
@@ -373,12 +385,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="마추픽추"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/salarde"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -411,7 +425,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="볼리비아" />
 
                     <TextView
                         android:id="@+id/card8_city"
@@ -421,12 +435,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="살라드 데"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/paris"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -457,7 +473,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="미국" />
+                        android:text="프랑스" />
 
                     <TextView
                         android:id="@+id/card9_city"
@@ -467,12 +483,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="파리"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/rome"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -505,7 +523,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="이탈리아" />
 
                     <TextView
                         android:id="@+id/card10_city"
@@ -515,12 +533,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="로마"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/sydney"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -551,7 +571,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="미국" />
+                        android:text="오스트레일리아" />
 
                     <TextView
                         android:id="@+id/card11_city"
@@ -561,12 +581,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="시드니"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/kiribati"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -599,7 +621,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="  " />
 
                     <TextView
                         android:id="@+id/card12_city"
@@ -609,12 +631,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="키리바시"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/montreal"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -645,7 +669,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="미국" />
+                        android:text="캐나다" />
 
                     <TextView
                         android:id="@+id/card13_city"
@@ -655,12 +679,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="자유의 여신상"
+                        android:text="몬트리올"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/vancouver"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_gravity="right"
@@ -693,7 +719,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="북한" />
+                        android:text="캐나다" />
 
                     <TextView
                         android:id="@+id/card14_city"
@@ -703,12 +729,14 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="어디냐"
+                        android:text="벤쿠버"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/tanzania"
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:layout_marginLeft="20dp"
@@ -739,7 +767,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="15번째나라" />
+                        android:text=" " />
 
                     <TextView
                         android:id="@+id/card15_city"
@@ -749,7 +777,7 @@
                         android:fontFamily="@font/notosanscjkkr_demilight"
                         android:foregroundGravity="center"
                         android:gravity="center"
-                        android:text="호놀룰루"
+                        android:text="탄자니아"
                         android:textColor="#000000"
                         android:textSize="18sp" />
                 </LinearLayout>
